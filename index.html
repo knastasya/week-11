@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Корзина</title>
+  </head>
+  <body class="wrapper">
+    <h1 class="title__cart">Корзина</h1>
+
+    <div class="products">
+      <div class="products__card products__card_top">
+        <img class="image" src="./assets/images/dress.webp" alt="Платье" />
+        <div class="discription">
+          <h4 class="title">
+            Top Top <br />
+            Платье и Болеро
+          </h4>
+          <p class="text">
+            Цвет: чёрный <br />
+            Размер: 42/44 RUS (S INT) <br />
+            Количество: 1
+          </p>
+        </div>
+        <span id="dress" class="price">6990</span>
+        <span>₽</span>
+      </div>
+
+      <div class="products__card">
+        <img class="image" src="./assets/images/earrings.webp" alt="Серьги" />
+        <div class="discription">
+          <h4 class="title">
+            Pabur <br />
+            Серьги
+          </h4>
+          <p class="text">
+            Цвет: розовый <br />
+            Количество: 1
+          </p>
+        </div>
+        <span id="earrings" class="price">1990</span><span>₽</span>
+      </div>
+
+      <div class="products__card">
+        <img class="image" src="./assets/images/sandals.webp" alt="Босоножки" />
+        <div class="discription">
+          <h4 class="title">
+            Mango <br />
+            Босоножки
+          </h4>
+          <p class="text">
+            Цвет: розовый <br />
+            Размер: 37 RUS <br />
+            Количество: 1
+          </p>
+        </div>
+        <span id="shoes" class="price">9990</span><span>₽</span>
+      </div>
+
+      <div class="products__card">
+        <img class="image" src="./assets/images/handbag.webp" alt="Сумка" />
+        <div class="discription">
+          <h4 class="title">
+            Mango <br />
+            Сумка CONNIE
+          </h4>
+          <p class="text">
+            Цвет: чёрный <br />
+            Количество: 1
+          </p>
+        </div>
+        <span id="bag" class="price">3490</span><span>₽</span>
+      </div>
+      <div class="total">
+        <button id="button" class="btn" onclick="applyDiscount()">
+          <span class="btn-text">Использовать купон на 20%</span>
+        </button>
+        <div class="result">
+          <span>Итого:</span> <br />
+          <span id="result" class="res"></span><span> ₽</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
